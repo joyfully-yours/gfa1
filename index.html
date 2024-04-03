@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <script>
+        function display() {
+            var name = prompt("Enter your nickname:");
+            var height = parseFloat(prompt("Enter your height in inches:"));
+            var weight = parseFloat(prompt("Enter your weight in kg:"));
+
+            var feet = Math.floor(height / 12);
+            var inches = height % 12;
+
+            var weightLbs = weight * 2.20462;
+
+            alert("Name: " + name + "\nHeight: " + feet + "' " + inches + "\"" + "\nWeight: " + weightLbs.toFixed(3) + " lbs");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="display()">Display Info</button>
+    <a href="index2.html">Task 2</a>
+    <a href="index3.html">Task 3</a>
+</body>
+</html>

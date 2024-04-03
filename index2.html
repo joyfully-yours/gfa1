@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    
+    <script>
+        function info() {
+
+            var firstName = prompt("Enter your first name:");
+            var lastName = prompt("Enter your last name:");
+            var bYear = parseInt(prompt("Enter your birth year:"));
+
+            var current = new Date().getFullYear();
+            var age = current - Year;
+
+            var message = "Hello " + firstName + " " + lastName + "! How does it feel to be " + age + " years old?";
+            document.getElementById("output").innerText = message;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="info()">Display Info</button>
+
+    <p id="output"></p>
+
+    <a href="index.html">Task 1</a>
+    <a href="index3.html">Task 3</a>
+</body>
+</html>

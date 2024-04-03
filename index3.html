@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <script>
+        function displayInfo() {
+            var nn = prompt("Enter your nickname:");
+            var height = parseFloat(prompt("Enter your height in inches:"));
+            var weight = parseFloat(prompt("Enter your weight in kg:"));
+            var feet = Math.floor(height / 12);
+            var inch = height % 12;
+
+            var weightLbs = weight * 2.20462;
+
+            var consent = confirm("Do you agree to share your personal information with our site?");
+            
+            if (consent) {
+                console.log("Name: " + nn + "\nHeight: " + feet + "' " + inch + "\"" + "\nWeight: " + weightLbs.toFixed(3) + " lbs");
+            } else {
+                console.log("User does not wish to share his/her information.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="displayInfo()">Display Info</button>
+    
+    <a href="index.html">Task 1</a>
+    <a href="index2.html">Task 2</a>
+</body>
+</html>
